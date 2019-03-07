@@ -1,0 +1,28 @@
+[33mcommit ed9a602e48b0fb49eda633fb21ea7811030f6160[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: muhammadrafihadikesuma <muhammadrafihadikesuma@gmail.com>
+Date:   Wed Mar 6 23:07:05 2019 +0700
+
+    first commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7590cbf[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32m# belajar_flutter[m
+[32m+[m
+[32m+[m[32mA new Flutter project.[m
+[32m+[m
+[32m+[m[32m## Getting Started[m
+[32m+[m
+[32m+[m[32mThis project is a starting point for a Flutter application.[m
+[32m+[m
+[32m+[m[32mA few resources to get you started if this is your first Flutter project:[m
+[32m+[m
+[32m+[m[32m- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)[m
+[32m+[m[32m- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)[m
+[32m+[m
+[32m+[m[32mFor help getting started with Flutter, view our[m[41m [m
+[32m+[m[32m[online documentation](https://flutter.io/docs), which offers tutorials,[m[41m [m
+[32m+[m[32msamples, guidance on mobile development, and a full API reference.[m
