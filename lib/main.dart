@@ -7,6 +7,9 @@ import 'package:belajar_flutter/hal_empat.dart' as Smartphone;
 
 //import halaman
 import './halaman_headset.dart';
+import './halaman_komputer.dart';
+import './halaman_radio.dart';
+import './halaman_hp.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -60,7 +63,7 @@ class _HalamanSatuState extends State<HalamanSatu>
                 PopupMenuItem(
                   child: GestureDetector(
                       onTap: () {
-                        print("Headset Clicked.");
+                        print("Klik Headset");
                         //navigator.pop ini untuk close popupmenu ketik di klik
                         Navigator.pop(context);
                         Navigator.push(
@@ -78,9 +81,57 @@ class _HalamanSatuState extends State<HalamanSatu>
                         ],
                       )),
                 ),
-                PopupMenuItem(child: Text('Komputer')),
-                PopupMenuItem(child: Text('Radio')),
-                PopupMenuItem(child: Text('Smartphone'))
+
+                PopupMenuItem(child: GestureDetector(
+                  onTap: (){
+                    print("Klik Komputer");
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context, 
+                      MaterialPageRoute(
+                        builder: (context) => HalamanKomputer()),
+                        );
+                  },
+                  child: new Row(
+                    children: <Widget>[
+                      Expanded(child: new Text("Komputer"),
+                      )
+                    ],
+                  ),
+                )
+                ),
+
+                PopupMenuItem(child: GestureDetector(
+                  onTap: (){
+                    print("Klik Radio");
+                    Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => HalamanRadio()
+                    ),
+                    );
+                  },
+                  child: new Row(
+                    children: <Widget>[
+                      Expanded(child: Text("Radio"),)
+                    ],
+                  ),
+                )),
+
+                PopupMenuItem(child: GestureDetector(
+                  onTap: (){
+                    print("Klik HP");
+                    Navigator.pop(context);
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => HalamanHp()  ),
+
+                    );                
+                   },
+                   child: new Row(
+                     children: <Widget>[
+                       Expanded(child: Text("Halaman Smartphone"),)
+                     ],
+                   ),
+                ))
               ];
             },
           )
